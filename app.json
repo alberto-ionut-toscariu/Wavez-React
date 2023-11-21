@@ -4,10 +4,10 @@
     "slug": "wavez",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/wavez.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Log-in.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
