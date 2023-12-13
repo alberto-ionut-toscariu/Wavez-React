@@ -1,6 +1,7 @@
 export default {
-    textStyle: "text-[#662f92] text-center p-4 text-lg font-bold",
-    registerModalButton: "bg-white rounded-r-3xl border-2 border-zinc-700",
-    signInModalButton: "bg-white rounded-l-3xl border-2 border-zinc-700",
-    signInButton: "bg-white rounded-3xl border-2 border-zinc-700"
+    textStyle: "text-[#A458A3] text-center text-2xl font-bold ",
+    signInModalButton: "relative w-[256px]",
+    beforeAfterElementLeft: "absolute w-[256px] h-[40px] bg-[#519FD7] left-[-10px] rounded-full z-10",
+    beforeAfterElementCenter: "absolute w-[256px] h-[40px] bg-white rounded-full z-20",
+    beforeAfterElementRight: "absolute w-[256px] h-[40px] bg-[#A458A3] right-[-10px] rounded-full z-10 ",
 };

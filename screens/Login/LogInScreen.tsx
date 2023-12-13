@@ -4,8 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient'
 import { BACKGROUND_GRADIENT_COLOR } from '../../constants/colors';
 import ClockComponent from '../../components/Clock/ClockComponent';
-import SignInModalButton from '../../components/Button/SignInModalButton';
-import RegisterModalButton from '../../components/Button/RegisterModalButton';
+import SignInButtonComponent from '../../components/Button/SignInButtonComponent';
 import styles from './styles';
 import { LOGO_IMAGE_FULL } from '../../constants/imagePaths';
 const LogInScreen = () => {
@@ -45,7 +44,7 @@ const LogInScreen = () => {
 
         {/*App-Description*/}
         <View className={styles.appDescriptionContainer}>
-          <Text className={styles.motoText}>
+          <Text className={styles.sloganText}>
             Let the Wavez carry you away!
           </Text>
           <Text className={styles.descriptionText}>
@@ -54,7 +53,7 @@ const LogInScreen = () => {
         </View>
         {/*Register/SignIn*/}
         <View className={styles.buttonsContainer}>
-          <SignInModalButton />
+          <SignInButtonComponent destination="SignIn" />
         </View>
       </LinearGradient>
     </SafeAreaView >

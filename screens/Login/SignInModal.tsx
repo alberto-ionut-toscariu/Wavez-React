@@ -6,7 +6,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { BACKGROUND_GRADIENT_COLOR_INV, WHITE } from '../../constants/colors';
 import { LOGO_IMAGE2_FULL } from '../../constants/imagePaths';
 import styles from './styles';
-import SignInButton from '../../components/Button/SignInButton';
+import SignInButtonComponent from '../../components/Button/SignInButtonComponent';
 
 const SignInModal = () => {
   const navigation = useNavigation();
@@ -60,8 +60,9 @@ const SignInModal = () => {
           <TouchableOpacity onPress={() => navigation.navigate('Register' as never)}><Text className='text-white text-sm'>Register</Text></TouchableOpacity>
         </View>
 
-        <SignInButton />
-
+        <View className='flex-row justify-center'>
+          <SignInButtonComponent destination='SignIn' />
+        </View>
       </SafeAreaView>
     </LinearGradient>
   )

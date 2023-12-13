@@ -7,7 +7,7 @@ export default {
     'logoFullImage': 'h-150 w-150 p-10 object-contain',
     'logoSignInImage': 'object-contain h-60 w-60',
     'appDescriptionContainer': 'items-center mt-4',
-    'motoText': 'font-bold text-white text-2xl text-center',
+    'sloganText': 'font-bold text-white text-2xl text-center',
     'descriptionText': 'font-semibold text-gray-200 text-xl text-center mt-5',
     'buttonsContainer': 'flex-row flex-1 items-center space-x-5 mt-4 justify-center',
     'modalContainer': 'pt-8 px-6',
