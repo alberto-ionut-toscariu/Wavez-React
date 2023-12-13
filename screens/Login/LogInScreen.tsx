@@ -7,7 +7,7 @@ import ClockComponent from '../../components/Clock/ClockComponent';
 import SignInModalButton from '../../components/Button/SignInModalButton';
 import RegisterModalButton from '../../components/Button/RegisterModalButton';
 import styles from './styles';
-import { LOGO_IMAGE, LOGO_IMAGE_FULL } from '../../constants/imagePaths';
+import { LOGO_IMAGE_FULL } from '../../constants/imagePaths';
 const LogInScreen = () => {
   const navigation = useNavigation();
 
@@ -22,13 +22,9 @@ const LogInScreen = () => {
       <LinearGradient
         className={styles.gradientContainer}
         colors={BACKGROUND_GRADIENT_COLOR}>
-
         {/*Header*/}
         <View className={styles.headerContainer}>
-          <Image
-            className={styles.logoImage}
-            source={LOGO_IMAGE}
-          />
+
           <View className={styles.headerTextContainer}>
             <Text className={styles.headerText}>
               Echoes Unraveled, Music Discovered
@@ -50,16 +46,15 @@ const LogInScreen = () => {
         {/*App-Description*/}
         <View className={styles.appDescriptionContainer}>
           <Text className={styles.motoText}>
-            Wavez lead you to groovy Beats!
+            Let the Wavez carry you away!
           </Text>
           <Text className={styles.descriptionText}>
-            Find your melodies and be part of a new community - All in one Innovative Music Recognition App!
+            Discover your favorite hits and feel the music - All in one Innovative Music Recognition App!
           </Text>
         </View>
         {/*Register/SignIn*/}
         <View className={styles.buttonsContainer}>
           <SignInModalButton />
-          <RegisterModalButton />
         </View>
       </LinearGradient>
     </SafeAreaView >

@@ -1,11 +1,10 @@
 export default {
     'gradientContainer': 'flex h-screen w-screen',
     'headerContainer': 'flex-row pb-3 items-center mx-4 space-x-2 mt-4',
-    'logoImage': 'h-7 w-7 p-4 rounded-full',
     'headerTextContainer': 'flex-1',
-    'headerText': 'font-bold text-gray-400 text-xs',
+    'headerText': 'font-bold text-gray-400 text-xs mx-4',
     'logoContainer': 'items-center mt-4',
-    'logoFullImage': 'h-150 w-150 p-10 rounded-full object-contain',
+    'logoFullImage': 'h-150 w-150 p-10 object-contain',
     'logoSignInImage': 'object-contain h-60 w-60',
     'appDescriptionContainer': 'items-center mt-4',
     'motoText': 'font-bold text-white text-2xl text-center',
