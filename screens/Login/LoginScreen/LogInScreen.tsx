@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { BACKGROUND_GRADIENT_COLOR } from '../../../constants/colors';
 import ClockComponent from '../../../components/Clock/ClockComponent';
 import SignInButtonComponent from '../../../components/Button/SignInButtonComponent';
-import styles from '../SignInModal/styles';
+import styles from './styles';
 import { LOGO_IMAGE_FULL } from '../../../constants/imagePaths';
 const LogInScreen = () => {
   const navigation = useNavigation();
@@ -45,7 +45,7 @@ const LogInScreen = () => {
         {/*App-Description*/}
         <View className={styles.appDescriptionContainer}>
           <Text className={styles.sloganText}>
-            Let the Wavez carry you away!
+            Let the Waves carry you away!
           </Text>
           <Text className={styles.descriptionText}>
             Discover your favorite hits and feel the music! All in one Innovative Music Recognition App!

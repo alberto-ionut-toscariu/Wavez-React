@@ -38,13 +38,13 @@ const SignInModal = () => {
 
 
         <View className='mt-28 mb-12 px-4 items-center drop-shadow-2xl'>
-          <Text className='font-montserratBold text-5xl text-white text-center'>Welcome</Text>
-          <Text className='font-montserratBold text-5xl text-white text-center mt-1'>back!</Text>
-          <Text className='font-montserrat text-2xl text-gray-300 mt-2' >You've been missed!</Text>
+          <Text className='font-montserratBold text-5xl text-white text-center shadow-lg'>Welcome</Text>
+          <Text className='font-montserratBold text-5xl text-white text-center shadow-lg mt-1'>back!</Text>
+          <Text className='font-montserrat text-2xl text-gray-300 mt-5' >You've been missed!</Text>
         </View>
         <View className='flex-col space-y-6'>
 
-          <View className=' flex-row mx-10 '>
+          <View className=' flex-row mx-10 mt-5'>
             <Image
               source={ICON_PERSON}
             />
