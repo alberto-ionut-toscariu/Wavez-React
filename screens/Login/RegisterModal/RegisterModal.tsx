@@ -3,8 +3,8 @@ import { ArrowUturnLeftIcon } from "react-native-heroicons/solid";
 import { useLayoutEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient'
-import { BACKGROUND_GRADIENT_COLOR_INV, WHITE } from '../../constants/colors';
-import styles from './styles';
+import { BACKGROUND_GRADIENT_COLOR_INV, WHITE } from '../../../constants/colors';
+import styles from '../SignInModal/styles';
 
 const RegisterModal = () => {
     const navigation = useNavigation();

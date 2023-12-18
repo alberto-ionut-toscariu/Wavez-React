@@ -1,5 +1,6 @@
 {
   "expo": {
+    "backgroundColor": "#121111",
     "name": "wavez",
     "slug": "wavez",
     "version": "1.0.0",
@@ -7,7 +8,7 @@
     "icon": "./assets/wavez.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/Log-in.png",
+      "image": "./assets/logo-1.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
