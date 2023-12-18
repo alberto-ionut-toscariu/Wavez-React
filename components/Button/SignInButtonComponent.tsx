@@ -5,9 +5,10 @@ import styles from './styles';
 
 interface CustomButtonProps {
   destination: string;
+  text?: string;
 }
 
-const SignInButtonComponent: React.FC<CustomButtonProps> = ({ destination }) => {
+const SignInButtonComponent: React.FC<CustomButtonProps> = ({ destination, text }) => {
   const navigation = useNavigation();
 
   return (
@@ -17,7 +18,7 @@ const SignInButtonComponent: React.FC<CustomButtonProps> = ({ destination }) => 
     >
       <View className={styles.beforeAfterElementLeft}></View>
       <View className={styles.beforeAfterElementCenter}>
-        <Text className={styles.textStyle}>Sign in</Text>
+        <Text className={styles.textStyle}>{text ? text : 'LOG IN!'}</Text>
       </View>
       <View className={styles.beforeAfterElementRight}></View>
     </TouchableOpacity>

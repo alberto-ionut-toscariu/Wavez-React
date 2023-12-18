@@ -8,7 +8,6 @@ import styles from './styles';
 import SignInButtonComponent from '../../../components/Button/SignInButtonComponent';
 import ClockComponent from '../../../components/Clock/ClockComponent';
 import { ICON_PERSON, ICON_LOCK } from '../../../constants/imagePaths';
-import { useFonts } from 'expo-font';
 
 const SignInModal = () => {
   const navigation = useNavigation();
@@ -18,19 +17,6 @@ const SignInModal = () => {
       headerShown: false,
     });
   }, []);
-  const [fontsLoaded] = useFonts({
-    'Montserrat': require('./Montserrat-Black.ttf'),
-  });
-
-  if (!fontsLoaded) {
-    // Fonts are still loading, render a loading indicator or placeholder
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <ActivityIndicator size="large" color="black" />
-        <Text>Loading fonts...</Text>
-      </View>
-    );
-  }
 
   return (
     <LinearGradient
@@ -51,9 +37,10 @@ const SignInModal = () => {
         </View>
 
 
-        <View className='mt-28 mb-12 px-4 items-center'>
-          <Text className='font-montserrat text-5xl text-white'>Welcome Back!</Text>
-          <Text className='font-bold text-2xl text-gray-300' >You've been missed!</Text>
+        <View className='mt-28 mb-12 px-4 items-center drop-shadow-2xl'>
+          <Text className='font-montserratBold text-5xl text-white text-center'>Welcome</Text>
+          <Text className='font-montserratBold text-5xl text-white text-center mt-1'>back!</Text>
+          <Text className='font-montserrat text-2xl text-gray-300 mt-2' >You've been missed!</Text>
         </View>
         <View className='flex-col space-y-6'>
 
@@ -61,7 +48,7 @@ const SignInModal = () => {
             <Image
               source={ICON_PERSON}
             />
-            <TextInput className='ml-4 flex-1 pb-0 text-white border-b border-white mr-16' placeholder='Email ID' keyboardType='email-address'></TextInput>
+            <TextInput className='ml-4 flex-1 pb-0 text-white border-b border-white mr-16' placeholder='Email' keyboardType='email-address'></TextInput>
           </View>
 
           <View className='flex-row mx-10'>
@@ -70,17 +57,20 @@ const SignInModal = () => {
             />
             <TextInput className='ml-4 flex-1 pb-0 text-white border-b border-white mr-16 placeholder-stone-900' placeholder='Password' secureTextEntry={true}></TextInput>
           </View>
-
         </View>
 
-        <View className='flex-row justify-center my-5'>
-          <Text className='text-gray-400 text-sm'>Don't have an account? </Text>
-          <TouchableOpacity onPress={() => navigation.navigate('Register' as never)}><Text className='text-white text-sm'>Register</Text></TouchableOpacity>
-        </View>
-
-        <View className='flex-row justify-center'>
+        <View className='flex-row justify-center mt-20'>
           <SignInButtonComponent destination='SignIn' />
         </View>
+
+        <View className='mt-20'>
+          <Text className={styles.singUpNowText}>Don't have an account?</Text>
+          <View className={styles.buttonContainer}>
+            <TouchableOpacity onPress={() => navigation.navigate('Register' as never)}><Text className={styles.singUpNowText + ' underline'}>Sign Up</Text></TouchableOpacity>
+            <Text className={styles.singUpNowText}> now!</Text>
+          </View>
+        </View>
+
       </SafeAreaView>
     </LinearGradient>
   )

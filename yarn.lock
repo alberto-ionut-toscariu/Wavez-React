@@ -3426,10 +3426,10 @@ expo-modules-core@1.5.12:
     compare-versions "^3.4.0"
     invariant "^2.2.4"
 
-expo-status-bar@^1.6.0:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.7.1.tgz#f2772a529187282eaa0741279ed8d525bdce54c4"
-  integrity sha512-Wkm9uCmuQQBSU+l/AekWAQ1d0FYw560yL116+OAKJDyKBOUpPURoWkFbabM1EDxv+5scTuSThr/CvsA0nsSCow==
+expo-status-bar@~1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.6.0.tgz#e79ffdb9a84d2e0ec9a0dc7392d9ab364fefa9cf"
+  integrity sha512-e//Oi2WPdomMlMDD3skE4+1ZarKCJ/suvcB4Jo/nO427niKug5oppcPNYO+csR6y3ZglGuypS+3pp/hJ+Xp6fQ==
 
 expo@~49.0.5:
   version "49.0.21"
@@ -5763,10 +5763,10 @@ react-native-heroicons@^3.2.0:
   resolved "https://registry.yarnpkg.com/react-native-heroicons/-/react-native-heroicons-3.2.0.tgz#34852039e21099b5a864f7f9f9805c8735584e52"
   integrity sha512-M5jlhReLBALrmeKIjH1qgF3OCNphfw8xKpRlHpX8OH4zgsC3L6+Lt+c4/hNxSbxUIN2+s8XC0eK/NZLku14IzA==
 
-react-native-maps@^1.7.1:
-  version "1.8.4"
-  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-1.8.4.tgz#41f91b597101ec58729c6cbb46dc347f52af68d5"
-  integrity sha512-PL7XX4dddTZB7PHDY0qslsJls5X2uRL2FSfUmiH4CFXIJ2l8QTaeWM6BLwnBswNUL6p4lQQeXuiATAhaRLHT6g==
+react-native-maps@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-1.7.1.tgz#e0b9d68542b4b59b5ca3df375ada7c860fb41f2e"
+  integrity sha512-CHVLzL+Q2jiUGgbt4/vosxVI1SukWyaLGjD62VLgR/wZpnH4Umi9ql1bmKDPWcfj2C1QZwMU0Yc7rXTbvZUIiw==
   dependencies:
     "@types/geojson" "^7946.0.10"
 
